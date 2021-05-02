@@ -77,8 +77,11 @@ body {
 .search-button:hover {
     cursor: pointer;
     background-color: rgba(108, 99, 205, 10);
-    outline: none;
 }
+
+.search-button:focus {
+    outline: none;
+}    
 
 @media only screen and (max-width: 720px) {
     .top-head {
