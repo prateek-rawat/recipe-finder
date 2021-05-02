@@ -72,6 +72,8 @@ body {
     padding: 10px;
     width: 90px;
     background-color: #6C63FF;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    -webkit-focus-ring-color: transparent;
 }
 
 .search-button:hover {
@@ -79,10 +81,8 @@ body {
     background-color: rgba(108, 99, 205, 10);
 }
 
-.search-button:focus {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
-    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
-    outline: none !important;
+.search-button:active {
+    -webkit-transform: scale3d(0.9, 0.9, 1);
 }    
 
 @media only screen and (max-width: 720px) {
