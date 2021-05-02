@@ -78,10 +78,12 @@ body {
     cursor: pointer;
     background-color: rgba(108, 99, 205, 10);
     outline: none !important;
+    border: 0px;
 }
 
 .search-button:focus {
     outline: none!important;
+    border: 0px;
 }    
 
 @media only screen and (max-width: 720px) {
