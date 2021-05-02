@@ -1,0 +1,87 @@
+@import "./variables";
+
+.no-results-para {
+    text-align: center;
+    font-family: $generalFontFamily;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.all-results-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.result-div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: $borderRadius;
+    padding: 20px;
+    background-color: #6C63FF;
+    box-shadow: rgba(108, 99, 205, 0.3) 0px 7px 29px 0px;
+
+    .recipe-name-head {
+        margin-bottom: 20px;
+        font-family: $generalFontFamily;
+        width: 320px;
+        word-wrap: break-word;
+    }
+    .recipe-image {
+        margin-bottom: 15px;
+        border-radius: 10px;
+        width: 320px;
+    }
+    .calories-head {
+        margin-bottom: 30px;
+        font-family: $generalFontFamily;
+        width: 320px;
+        word-wrap: break-word;
+    }
+
+    .ingredients-heading {
+        margin-bottom: 20px;
+        font-family: $generalFontFamily;
+        width: 320px;
+        word-wrap: break-word;
+    }
+
+    .ingredient-list-item {
+        margin-bottom: 10px;
+        font-family: $generalFontFamily;
+        width: 320px;
+        word-wrap: break-word;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .recipe-name-head, .recipe-image, .calories-head, .ingredients-heading, .ingredient-list-item {
+        width: 50vw !important;
+    }
+
+    .recipe-name-head {
+        font-size: 5vw;
+    }
+
+    .calories-head {
+        font-size: 3.5vw;
+    }
+
+    .ingredients-heading {
+        font-size: 4vw;
+    }
+
+    .ingredient-list-item {
+        font-size: 3.5vw;
+    }
+       
+}
+
+
+
+

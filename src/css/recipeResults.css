@@ -1,0 +1,92 @@
+.no-results-para {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.all-results-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.result-div {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  padding: 20px;
+  background-color: #6C63FF;
+  -webkit-box-shadow: rgba(108, 99, 205, 0.3) 0px 7px 29px 0px;
+          box-shadow: rgba(108, 99, 205, 0.3) 0px 7px 29px 0px;
+}
+
+.result-div .recipe-name-head {
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+  width: 320px;
+  word-wrap: break-word;
+}
+
+.result-div .recipe-image {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+.result-div .calories-head {
+  margin-bottom: 30px;
+  font-family: "Libre Baskerville", serif;
+  width: 320px;
+  word-wrap: break-word;
+}
+
+.result-div .ingredients-heading {
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+  width: 320px;
+  word-wrap: break-word;
+}
+
+.result-div .ingredient-list-item {
+  margin-bottom: 10px;
+  font-family: "Libre Baskerville", serif;
+  width: 320px;
+  word-wrap: break-word;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+  .recipe-name-head, .recipe-image, .calories-head, .ingredients-heading, .ingredient-list-item {
+    width: 50vw !important;
+  }
+  .recipe-name-head {
+    font-size: 5vw;
+  }
+  .calories-head {
+    font-size: 3.5vw;
+  }
+  .ingredients-heading {
+    font-size: 4vw;
+  }
+  .ingredient-list-item {
+    font-size: 3.5vw;
+  }
+}
+/*# sourceMappingURL=recipeResults.css.map */

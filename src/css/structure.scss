@@ -1,0 +1,155 @@
+@import "./variables";
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bodybBackgroundColor;
+}
+
+.top-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 70px;
+} 
+
+.top-div-dynamic {
+    margin-top: 20vh;
+}
+
+@keyframes position {
+    from {position:relative;
+        bottom: 70px;}
+    to {position: relative;
+        bottom: 0px;}    
+}
+
+.head-image-div {
+    display: flex;
+
+    .top-head {
+        font-family: $headFontFamily;
+        font-size: 80px;
+        font-weight: lighter;
+        text-decoration: overline;
+        text-align: center;
+        text-shadow: 0.5px 0.5px 3px #c0c0c0;
+    }
+
+    .main-logo-image {
+        height: 140px;
+        margin-left: 50px;
+        animation-name: position;
+        animation-duration: 2s;
+    }
+}
+
+.search-form {
+    display: flex;
+    margin-top: 40px;
+}
+
+.search-input {
+    border-radius: $borderRadius;
+    border: 0px;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    width: 300px;
+    background-color: #c0c0c0;
+}
+
+.search-button {
+    border-radius: $borderRadius;
+    border: 0px;
+    margin-left: 12px;
+    font-size: 20px;
+    padding: 10px;
+    width: 90px;
+    background-color: #6C63FF;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background-color: rgba(108, 99, 205, 10);
+}
+
+@media only screen and (max-width: 720px) {
+    .top-head {
+        font-size: 60px !important;
+    }
+
+    .main-logo-image{
+        height: 105px !important;
+    }
+
+    .search-input {
+        font-size: 15px;
+        width: 200px;
+        height: 30px;
+    }
+
+    .search-button {
+        font-size: 15px;
+        width: 65px;
+        height: 30px;
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .top-head {
+        font-size: 40px !important;
+    }
+
+    .main-logo-image{
+        height: 75px !important;
+        margin-left: 30px !important;
+    }
+
+    .search-input {
+        font-size: 12px;
+        width: 180px;
+        height: 30px;
+    }
+
+    .search-button {
+        font-size: 12px;
+        width: 60px;
+        height: 30px;
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+
+    .top-head {
+        font-size: 10vw !important;
+    }
+    
+    .main-logo-image {
+        height: 15vw !important;
+        margin-left: 20px !important;
+    }
+    
+    .search-input {
+        font-size: 4vw;
+        width: 50vw;
+        height: 8vw;
+    }
+    
+    .search-button {
+        font-size: 3vw;
+        width: 15vw;
+        height: 8vw;
+        text-align: center;
+    }
+}
