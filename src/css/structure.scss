@@ -79,8 +79,10 @@ body {
     background-color: rgba(108, 99, 205, 10);
 }
 
-.search-button:focus, .search-button::-moz-focus-inner {
-    border: none;
+.search-button:focus {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
 }    
 
 @media only screen and (max-width: 720px) {
